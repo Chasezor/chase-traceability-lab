@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 
-
+// include and initialize the rollbar library with your access token
 var Rollbar = require('rollbar')
 var rollbar = new Rollbar({
   accessToken: '8c27a50a657848d59ac6ff37c82496c3',
@@ -10,7 +10,7 @@ var rollbar = new Rollbar({
 })
 
 // record a generic message and send it to Rollbar
-rollbar.log('Hello world! - this is the project trace-lab')
+rollbar.log('Hello world!')
 
 
 
